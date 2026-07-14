@@ -1,12 +1,12 @@
 :root {
-  --bg: #080808;
-  --panel: #121212;
-  --panel-2: #1a1a1a;
-  --text: #f7f7f2;
-  --muted: #b7b2a7;
-  --accent: #ff7a1a;
-  --accent-2: #ffd166;
-  --border: rgba(255, 255, 255, 0.1);
+  --bg: #fff7f1;
+  --panel: #fff1e7;
+  --panel-2: #ffe6d4;
+  --text: #2b271f;
+  --muted: #8d7a66;
+  --accent: #ff8d6b;
+  --accent-2: #ffd1a6;
+  --border: rgba(43, 37, 30, 0.12);
 }
 
 * {
@@ -44,7 +44,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 1.1rem 5vw;
-  background: rgba(8, 8, 8, 0.9);
+  background: rgba(255, 244, 236, 0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -52,13 +52,18 @@ img {
 .brand {
   font-size: 1.1rem;
   font-weight: 900;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  color: #d96636;
 }
 
 .nav-links {
   display: flex;
   gap: 1.4rem;
+  color: var(--muted);
+}
+
+.nav-links a {
   color: var(--muted);
 }
 
@@ -81,9 +86,7 @@ img {
   display: grid;
   align-items: center;
   padding: 5rem 5vw 4rem;
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)),
-    url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=80") center/cover;
+  background: linear-gradient(180deg, rgba(255, 242, 235, 1), rgba(255, 236, 222, 1));
 }
 
 .hero-content {
@@ -93,13 +96,14 @@ img {
 .eyebrow {
   display: inline-block;
   margin-bottom: 1rem;
-  padding: 0.38rem 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid rgba(255, 141, 107, 0.25);
   border-radius: 999px;
-  color: var(--accent-2);
+  color: var(--accent);
   font-size: 0.82rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .hero h1 {
@@ -111,7 +115,7 @@ img {
 .hero p {
   font-size: 1.06rem;
   max-width: 650px;
-  color: #e7e2d9;
+  color: #5f4b3b;
   margin-bottom: 1.8rem;
 }
 
@@ -139,8 +143,9 @@ img {
 }
 
 .btn-secondary {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: var(--text);
 }
 
 section {
@@ -248,7 +253,7 @@ footer {
     right: 0;
     flex-direction: column;
     padding: 1rem 5vw 1.2rem;
-    background: rgba(8, 8, 8, 0.96);
+    background: rgba(255, 244, 236, 0.98);
     border-bottom: 1px solid var(--border);
   }
 
