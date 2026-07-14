@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRAVE CLUB | Eat. Meet. Repeat.</title>
+    <meta name="description" content="A modern food-loving community landing page for Melbourne food events." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#">Crave Club</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#join">Join</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">Melbourne food club</span>
+          <h1>I don't want to hike. I want to eat.</h1>
+          <p>
+            Discover viral food spots, hidden gems, dessert bars, and late-night eats with people who love food as much as you do.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#join">Join the next crave</a>
+            <a class="btn btn-secondary" href="#events">See upcoming events</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">How it works</h2>
+        <p class="muted">No awkward networking. No forced activities. Just good food and better conversations.</p>
+        <div class="about-grid" style="margin-top: 1.4rem;">
+          <article class="panel">
+            <h3>🍔 Find the craving</h3>
+            <p class="muted">We hunt down Melbourne's most talked-about burgers, cafes, desserts, and food experiences.</p>
+          </article>
+          <article class="panel">
+            <h3>👥 Meet your crew</h3>
+            <p class="muted">Join a small group of strangers who are looking for food, fun, and new friends.</p>
+          </article>
+          <article class="panel">
+            <h3>🔥 Eat together</h3>
+            <p class="muted">Show up hungry, make a few friends, and enjoy a memorable night out.</p>
+          </article>
+          <article class="panel">
+            <h3>📍 Local favorites</h3>
+            <p class="muted">From hidden gems to Instagram-famous spots, every event is built around amazing food.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="events">
+        <h2 class="section-title">Upcoming craves</h2>
+        <div class="events-grid">
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Burger night" />
+            <div class="content">
+              <h3>Smash burger night</h3>
+              <p class="muted">12 spots • Melbourne CBD</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Dessert crawl" />
+            <div class="content">
+              <h3>Dessert crawl</h3>
+              <p class="muted">Matcha • Cakes • Gelato</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=80" alt="Late night eats" />
+            <div class="content">
+              <h3>Late night eats</h3>
+              <p class="muted">Hidden Melbourne gems</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="join">
+        <div class="cta-box">
+          <h2 class="section-title">Come hungry.</h2>
+          <p class="muted">Join a community of people who believe the best memories are made around a table.</p>
+          <form>
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+            <textarea placeholder="Tell us what kind of food event you want to join"></textarea>
+            <a class="btn btn-primary" href="#">Become a member</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Crave Club. Eat. Meet. Repeat.
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.getElementById('nav-links');
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          nav.classList.toggle('open');
+        });
+      }
+    </script>
+  </body>
+</html>
